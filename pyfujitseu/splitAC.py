@@ -344,7 +344,7 @@ class splitAC:
     def af_vertical_direction(self, properties):
         if isinstance(properties, (list, tuple)):
             self._af_vertical_direction = self._get_prop_from_json(
-                "af_vertical_move_step1", properties
+                "af_vertical_direction", properties
             )
         elif isinstance(properties, int):
             self._api._set_device_property(
